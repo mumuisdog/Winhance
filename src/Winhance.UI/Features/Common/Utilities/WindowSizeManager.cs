@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.UI.Windowing;
 using Winhance.Core.Features.Common.Constants;
@@ -22,6 +24,13 @@ public class WindowSizeManager
     private const int MinHeight = 600;
     private const double ScreenWidthPercentage = 0.70;
     private const double ScreenHeightPercentage = 0.80;
+
+    // Minimum on-screen overlap required for a restored window position to be
+    // considered usable. Smaller than a normal title bar so partially-dragged
+    // windows still restore in place, large enough that a stale off-screen
+    // position (e.g. saved on a since-disconnected secondary monitor) fails.
+    internal const int MinVisibleWidth = 120;
+    internal const int MinVisibleHeight = 40;
 
     // Tracked "normal" bounds (WinUI 3 has no RestoreBounds equivalent)
     private int _normalX;
@@ -126,10 +135,26 @@ public class WindowSizeManager
             int w = (int)width;
             int h = (int)height;
 
-            // Restore position if valid
+            // Restore position if valid and still visible on an active monitor.
+            // If the saved rect is off-screen (e.g. secondary monitor was disconnected
+            // since last close), fall back to centering on the primary display.
             if (!double.IsNaN(left) && !double.IsNaN(top))
             {
-                _appWindow.MoveAndResize(new RectInt32((int)left, (int)top, w, h));
+                var savedRect = new RectInt32((int)left, (int)top, w, h);
+                var workAreas = DisplayArea.FindAll().Select(d => d.WorkArea);
+
+                if (IsWindowRectVisible(savedRect, workAreas))
+                {
+                    _appWindow.MoveAndResize(savedRect);
+                }
+                else
+                {
+                    _logService.Log(
+                        LogLevel.Info,
+                        $"Saved window position ({savedRect.X}, {savedRect.Y}) is not visible on any active display; re-centering on primary.");
+                    _appWindow.Resize(new SizeInt32(w, h));
+                    CenterOnScreen();
+                }
             }
             else
             {
@@ -205,6 +230,28 @@ public class WindowSizeManager
     private void SubscribeToWindowChanges()
     {
         _appWindow.Changed += AppWindow_Changed;
+    }
+
+    internal static bool IsWindowRectVisible(RectInt32 windowRect, IEnumerable<RectInt32> workAreas)
+    {
+        if (workAreas is null)
+            return false;
+
+        foreach (var work in workAreas)
+        {
+            int overlapLeft = Math.Max(windowRect.X, work.X);
+            int overlapTop = Math.Max(windowRect.Y, work.Y);
+            int overlapRight = Math.Min(windowRect.X + windowRect.Width, work.X + work.Width);
+            int overlapBottom = Math.Min(windowRect.Y + windowRect.Height, work.Y + work.Height);
+
+            int overlapW = overlapRight - overlapLeft;
+            int overlapH = overlapBottom - overlapTop;
+
+            if (overlapW >= MinVisibleWidth && overlapH >= MinVisibleHeight)
+                return true;
+        }
+
+        return false;
     }
 
     private void AppWindow_Changed(AppWindow sender, AppWindowChangedEventArgs args)
