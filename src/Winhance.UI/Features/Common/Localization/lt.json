@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "Generatyvaus DI prieiga",
   "Setting_privacy-deny-generative-ai-access_Description": "Neleidžia prieigos prie generatyvaus DI",
   "Setting_privacy-deny-system-ai-models_Name": "Sistemos DI modelių prieiga",
-  "Setting_privacy-deny-system-ai-models_Description": "Neleidžia prieigos prie sistemos DI modelių",
+  "Setting_privacy-deny-system-ai-models_Description": "Kontroliuoja, ar programos gali pasiekti sistemos DI modelius jūsų įrenginyje ir rinkti naudojimo duomenis. Išjungus šią parinktį nebeveiks Iškarpų įrankio teksto išgavimas (Išgauti tekstą, Kopijuoti visą tekstą, Kopijuoti kaip lentelę) ir kitos įrenginyje veikiančios OCR funkcijos.",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot mikrofono prieiga",
   "Setting_privacy-deny-copilot-microphone_Description": "Neleidžia Copilot prieigos prie mikrofono",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Paint DI vaizdų kūrėjas",

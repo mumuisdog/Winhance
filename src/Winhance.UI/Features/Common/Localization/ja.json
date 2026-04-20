@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "生成 AI アクセス",
   "Setting_privacy-deny-generative-ai-access_Description": "生成 AI へのアクセスを拒否します",
   "Setting_privacy-deny-system-ai-models_Name": "システム AI モデルへのアクセス",
-  "Setting_privacy-deny-system-ai-models_Description": "システム AI モデルへのアクセスを拒否します",
+  "Setting_privacy-deny-system-ai-models_Description": "アプリがデバイス上のシステム AI モデルにアクセスし、使用状況データを収集できるかどうかを制御します。これを無効にすると、Snipping Tool のテキスト抽出機能（「テキストの抽出」、「すべてのテキストをコピー」、「テーブルとしてコピー」）やその他のオンデバイス OCR 機能が動作しなくなります。",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot マイク アクセス",
   "Setting_privacy-deny-copilot-microphone_Description": "Copilot によるマイク アクセスを拒否します",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Paint AI 画像作成",

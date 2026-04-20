@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "생성형 AI 접근",
   "Setting_privacy-deny-generative-ai-access_Description": "생성형 AI 접근을 거부합니다",
   "Setting_privacy-deny-system-ai-models_Name": "시스템 AI 모델 접근",
-  "Setting_privacy-deny-system-ai-models_Description": "시스템 AI 모델에 대한 접근을 거부합니다",
+  "Setting_privacy-deny-system-ai-models_Description": "앱이 장치의 시스템 AI 모델에 접근하고 사용 데이터를 수집할 수 있는지 여부를 제어합니다. 이 기능을 비활성화하면 캡처 도구의 텍스트 추출, 모든 텍스트 복사, 표로 복사 기능과 기타 장치 내 OCR 기능이 작동하지 않습니다.",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot 마이크 접근",
   "Setting_privacy-deny-copilot-microphone_Description": "Copilot의 마이크 접근을 거부합니다",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Paint AI 이미지 크리에이터",

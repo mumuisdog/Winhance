@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "Üretken Yapay Zeka Erişimi",
   "Setting_privacy-deny-generative-ai-access_Description": "Üretken yapay zeka özelliklerine erişimi engeller",
   "Setting_privacy-deny-system-ai-models_Name": "Sistem Yapay Zeka Modellerine Erişim",
-  "Setting_privacy-deny-system-ai-models_Description": "Sistem yapay zeka modellerine erişimi engeller",
+  "Setting_privacy-deny-system-ai-models_Description": "Uygulamaların cihazınızdaki sistem yapay zeka modellerine erişmesine ve kullanım verilerini toplamasına izin verilip verilmeyeceğini denetler. Bunu devre dışı bırakmak, Ekran Alıntısı Aracı'nın metin ayıklama işlevini (Metni ayıkla, Tüm metni kopyala, Tablo olarak kopyala) ve diğer cihaz üzerindeki OCR özelliklerini bozar.",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot Mikrofon Erişimi",
   "Setting_privacy-deny-copilot-microphone_Description": "Copilot'ın mikrofona erişimini engeller",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Paint Yapay Zeka Görüntü Oluşturucu",

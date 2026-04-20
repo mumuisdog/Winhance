@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "生成式 AI 存取",
   "Setting_privacy-deny-generative-ai-access_Description": "拒絕存取生成式 AI 功能",
   "Setting_privacy-deny-system-ai-models_Name": "系統 AI 模型存取",
-  "Setting_privacy-deny-system-ai-models_Description": "拒絕存取系統 AI 模型",
+  "Setting_privacy-deny-system-ai-models_Description": "控制應用程式是否可存取您裝置上的系統 AI 模型並收集使用資料。停用此項會中斷剪取工具的文字擷取功能（擷取文字、複製所有文字、複製為表格）以及其他裝置端 OCR 功能。",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot 麥克風存取",
   "Setting_privacy-deny-copilot-microphone_Description": "拒絕 Copilot 存取麥克風",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "小畫家 AI 圖像建立器",

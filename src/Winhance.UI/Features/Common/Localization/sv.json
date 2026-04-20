@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "Tillgång till generativ AI",
   "Setting_privacy-deny-generative-ai-access_Description": "Nekar åtkomst till generativa AI-funktioner",
   "Setting_privacy-deny-system-ai-models_Name": "Tillgång till system-AI-modeller",
-  "Setting_privacy-deny-system-ai-models_Description": "Nekar åtkomst till systemets AI-modeller",
+  "Setting_privacy-deny-system-ai-models_Description": "Styr om appar kan komma åt systemets AI-modeller på enheten och samla in användningsdata. Om detta inaktiveras slutar textextraktionen i Skärmklippverktyget att fungera (Extrahera text, Kopiera all text, Kopiera som tabell) och andra OCR-funktioner på enheten.",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot-mikrofonåtkomst",
   "Setting_privacy-deny-copilot-microphone_Description": "Nekar Copilot åtkomst till mikrofonen",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Paint AI-bildskapare",

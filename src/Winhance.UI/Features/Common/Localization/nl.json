@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "Toegang tot generatieve AI",
   "Setting_privacy-deny-generative-ai-access_Description": "Weigert toegang tot generatieve AI",
   "Setting_privacy-deny-system-ai-models_Name": "Toegang tot systeem-AI-modellen",
-  "Setting_privacy-deny-system-ai-models_Description": "Weigert toegang tot systeem-AI-modellen",
+  "Setting_privacy-deny-system-ai-models_Description": "Bepaalt of apps toegang hebben tot systeem-AI-modellen op uw apparaat en gebruiksgegevens kunnen verzamelen. Als u dit uitschakelt, werkt tekstextractie in Knipprogramma niet meer (Tekst extraheren, Alle tekst kopiëren, Als tabel kopiëren) en worden ook andere OCR-functies op het apparaat uitgeschakeld.",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot-microfoontoegang",
   "Setting_privacy-deny-copilot-microphone_Description": "Weigert Copilot toegang tot de microfoon",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Paint AI-afbeeldingsmaker",

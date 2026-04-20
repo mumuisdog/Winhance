@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "Přístup ke generativní AI",
   "Setting_privacy-deny-generative-ai-access_Description": "Určuje, zda mohou aplikace přistupovat ke schopnosti generativní AI na vašem zařízení",
   "Setting_privacy-deny-system-ai-models_Name": "Přístup k systémovým modelům AI",
-  "Setting_privacy-deny-system-ai-models_Description": "Určuje, zda mohou aplikace přistupovat k systémovým modelům AI na vašem zařízení a shromažďovat data o používání",
+  "Setting_privacy-deny-system-ai-models_Description": "Určuje, zda mohou aplikace přistupovat k systémovým modelům AI ve vašem zařízení a shromažďovat data o používání. Zakázání této možnosti naruší extrakci textu v Nástroji pro výstřižky (Extrahovat text, Kopírovat celý text, Kopírovat jako tabulku) a další funkce OCR v zařízení.",
   "Setting_privacy-deny-copilot-microphone_Name": "Přístup Copilot k mikrofonu",
   "Setting_privacy-deny-copilot-microphone_Description": "Určuje, zda mají aplikace Copilot a Office Hub oprávnění k mikrofonu",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Tvůrce obrázků AI v Paint",

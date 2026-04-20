@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "生成式 AI 访问",
   "Setting_privacy-deny-generative-ai-access_Description": "拒绝访问生成式 AI 功能",
   "Setting_privacy-deny-system-ai-models_Name": "系统 AI 模型访问",
-  "Setting_privacy-deny-system-ai-models_Description": "拒绝访问系统 AI 模型",
+  "Setting_privacy-deny-system-ai-models_Description": "控制应用是否可以访问设备上的系统 AI 模型并收集使用数据。禁用此项将导致截图工具的文本提取功能（提取文本、复制所有文本、复制为表格）以及其他设备端 OCR 功能无法使用。",
   "Setting_privacy-deny-copilot-microphone_Name": "Copilot 麦克风访问",
   "Setting_privacy-deny-copilot-microphone_Description": "拒绝 Copilot 访问麦克风",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "画图 AI 图像创建器",

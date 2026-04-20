@@ -1811,7 +1811,7 @@
   "Setting_privacy-deny-generative-ai-access_Name": "Accesso IA generativa",
   "Setting_privacy-deny-generative-ai-access_Description": "Nega l'accesso all'IA generativa",
   "Setting_privacy-deny-system-ai-models_Name": "Accesso modelli AI di sistema",
-  "Setting_privacy-deny-system-ai-models_Description": "Nega l'accesso ai modelli IA di sistema",
+  "Setting_privacy-deny-system-ai-models_Description": "Controlla se le app possono accedere ai modelli IA di sistema sul dispositivo e raccogliere dati di utilizzo. Disabilitando questa opzione si interrompe l'estrazione del testo dello Strumento di cattura (Estrai testo, Copia tutto il testo, Copia come tabella) e altre funzionalità OCR sul dispositivo.",
   "Setting_privacy-deny-copilot-microphone_Name": "Accesso microfono Copilot",
   "Setting_privacy-deny-copilot-microphone_Description": "Nega l'accesso al microfono da parte di Copilot",
   "Setting_privacy-disable-paint-ai-image-creator_Name": "Creatore immagini AI di Paint",
